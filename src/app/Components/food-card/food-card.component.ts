@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
-
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FoodModule } from '../../Models/food.module';
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-food-card',
-  imports: [],
+  imports: [CommonModule, RouterModule],
   templateUrl: './food-card.component.html',
-  styles: ``
+  styles: ``,
 })
 export class FoodCardComponent {
-
+  @Input() food: FoodModule | undefined = undefined;
 }
