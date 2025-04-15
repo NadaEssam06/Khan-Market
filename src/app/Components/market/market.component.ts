@@ -3,9 +3,10 @@ import { FoodCardComponent } from '../food-card/food-card.component';
 import { FoodreqService } from '../../Service/foodreq.service';
 import { FoodModule } from '../../Models/food.module';
 import { HttpClient } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-market',
-  imports: [FoodCardComponent],
+  imports: [FoodCardComponent, RouterModule],
   providers: [FoodreqService],
   templateUrl: './market.component.html',
   styles: ``,
