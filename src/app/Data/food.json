@@ -1,0 +1,22 @@
+{
+  "food": [
+    {
+      "id": 1,
+      "name": "Burger",
+      "price": 15,
+      "info": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.jinistock.com%2Fshop%2Ffoul-and-falafel-1923&psig=AOvVaw2hSr1NT-ClMouxpx4XRbTX&ust=1744789720379000&source=images&opi=89978449"
+    },
+    {
+      "id": 2,
+      "name": "Pizza",
+      "price": 20,
+      "info": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.jinistock.com%2Fshop%2Ffoul-and-falafel-1923&psig=AOvVaw2hSr1NT-ClMouxpx4XRbTX&ust=1744789720379000&source=images&opi=89978449"
+    },
+    {
+      "id": 3,
+      "name": "Coffee",
+      "price": 5,
+      "info": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.jinistock.com%2Fshop%2Ffoul-and-falafel-1923&psig=AOvVaw2hSr1NT-ClMouxpx4XRbTX&ust=1744789720379000&source=images&opi=89978449"
+    }
+  ]
+}

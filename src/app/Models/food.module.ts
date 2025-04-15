@@ -1,5 +1,6 @@
 export interface FoodModule {
+  id: number;
   name: string;
   price: number;
-  info: string;
+  info?: string;
 }
