@@ -1,6 +1,7 @@
 <style>
   svg {
     width: 1.3rem;
+    fill: orangered;
   }
   a {
     text-decoration: none;
@@ -13,8 +14,23 @@
   .card:hover {
     box-shadow: 3px 0px 3px gray;
   }
+  .card-footer {
+    text-align: end;
+  }
+  img {
+    height: 200px;
+  }
+
+  .link-page:hover {
+    transform: translate(5px, 0);
+  }
 </style>
 <div class="card mt-3" style="width: 18rem">
+  @if(food?.src){<img
+    [src]="food?.src"
+    class="card-img-top"
+    [alt]="food?.src"
+  />}
   <div class="card-body">
     <p class="card-text">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -34,6 +50,24 @@
       </svg>
       {{ food?.price }} L.E
     </p>
-    <a class="card-link" [routerLink]="food?.info">more details...</a>
+    @if(food?.info){<a class="card-link" [routerLink]="food?.info"
+      >more details...</a
+    >}
   </div>
+  @if(food?.info){
+  <div class="card-footer">
+    <button class="btn" [routerLink]="'item/' + food?.id">
+      <svg
+        class="link-page"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 448 512"
+      >
+        <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+        <path
+          d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+        />
+      </svg>
+    </button>
+  </div>
+  }
 </div>

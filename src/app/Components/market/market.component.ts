@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FoodCardComponent } from '../food-card/food-card.component';
 import { FoodreqService } from '../../Service/foodreq.service';
 import { FoodModule } from '../../Models/food.module';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-market',
   imports: [FoodCardComponent],
