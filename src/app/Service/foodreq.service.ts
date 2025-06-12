@@ -14,7 +14,7 @@ export class FoodreqService {
   getFoodByID(id: number) {
     return this.htt.get(this.url + '/' + id);
   }
-  addFood(food: FoodCardComponent) {
-    return this.htt.put(this.url, food);
+  addFood(food: any) {
+    return this.htt.post(this.url, food);
   }
 }
