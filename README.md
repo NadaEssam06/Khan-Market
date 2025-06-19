@@ -1,59 +1,76 @@
-# Final
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
+# Khan Market – Complete E-Commerce Web Platform
 
-## Development server
+Khan Market is a full-featured e-commerce web application built with Angular 19 and Bootstrap 5.3. It provides a modern, responsive user interface and an admin panel for managing products. The project uses `json-server` to simulate REST API endpoints during development, making it ideal for prototypes, MVPs, or educational purposes.
 
-To start a local development server, run:
+## Features
+
+- Organized and responsive product listing interface
+- Dynamic shopping cart functionality
+- Admin panel with full CRUD (Create, Read, Update, Delete) operations for product management
+- API consumption using Angular's built-in HttpClient
+- Modular, scalable architecture with reusable components
+- Mock backend using `json-server`
+
+## Project Structure
+
+```
+
+khan-market/
+├── src/
+│   ├── app/
+│   │   ├── components/         # Front-end UI components
+│   │   ├── services/           # Data and API services
+│   │   └── admin-panel/        # Admin dashboard for product management
+│   ├── assets/
+│   └── index.html
+├── db.json                    # Mock database for json-server
+
+````
+
+## Tech Stack
+
+- Angular 19
+- Bootstrap 5.3
+- TypeScript
+- RxJS
+- HTML5 + CSS3
+- Font Awesome
+- json-server (mock API)
+
+## Getting Started
+
+### 1. Run the Frontend
 
 ```bash
+npm install
 ng serve
+````
+
+Visit the application at:
+
+```
+http://localhost:4200
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### 2. Run the Mock Backend
 
 ```bash
-ng generate component component-name
+npx json-server --watch db.json --port 3000
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+API will be available at:
 
-```bash
-ng generate --help
+```
+http://localhost:3000/products
 ```
 
-## Building
+## Developer
 
-To build the project run:
+Nada Essam
+GitHub: [NadaEssam06](https://github.com/NadaEssam06)
 
-```bash
-ng build
-```
+## License
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+This project is open source and available under the MIT License.
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
