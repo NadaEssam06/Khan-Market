@@ -7,7 +7,7 @@
 
 ### **Overview**
 
-**Khan Market** is a complete restaurant management and online ordering platform built with Angular 19 and Bootstrap 5.3. It provides a responsive customer-facing website for browsing menus and placing orders, along with a dedicated admin panel for managing menu items, categories, and availability. The project uses `json-server` to simulate REST API endpoints, making it suitable for prototypes, MVPs, and educational projects.
+**Khan Market** is a complete restaurant management platform built with Angular 19 and Bootstrap 5.3. It provides a responsive customer-facing website for browsing menus and placing orders, along with a dedicated admin panel for managing menu items, categories, and availability. The project uses `json-server` to simulate REST API endpoints, making it suitable for prototypes, MVPs, and educational projects.
 
 ---
 
