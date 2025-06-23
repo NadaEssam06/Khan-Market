@@ -1,7 +1,7 @@
 
 ### **Project Title:**
 
-**Khan Market – Restaurant Management and Online Ordering System**
+**Khan Market – Restaurant Management**
 
 ---
 
